@@ -4,7 +4,15 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
+/* Custom Properties, update these for your own design 
+--clr-light: #fff;
+--clr-dark: #1f1c1c;
+--clr-accent: rgb(22,224,189);
+--clr-accent-bg: rgba(43, 68, 65, 0.4);
+--clr-accent-btn-bg: rgb(24, 6, 3);
+--clr-accent-btn-svg: rgb(226, 59, 21);
+
+*/
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
@@ -15,10 +23,10 @@
     
     --clr-light: #fff;
     --clr-dark: #1f1c1c;
-    --clr-accent: rgb(22,224,189);
+    --clr-accent: rgb(148, 172, 191);
     --clr-accent-bg: rgba(43, 68, 65, 0.4);
-    --clr-accent-btn-bg: rgb(24, 6, 3);
-    --clr-accent-btn-svg: rgb(226, 59, 21);
+    
+    --clr-btn-svg: rgb(226, 59, 21);
     
     --fs-h1: 2.8rem;
     --fs-h2: 2rem;
@@ -205,7 +213,7 @@ header {
 }
 
 .hamburger svg.rotate {
-    fill: var(--clr-accent-btn-svg);
+    fill: var(--clr-btn-svg);
 }
 
 
@@ -387,8 +395,10 @@ header {
 .my-services {
     background-color: var(--clr-accent-bg);
     background-image: url(./images/backgroundImages/2.png); /* <---*/
+    background-attachment: fixed;
     background-size:  cover;
     background-position: top;
+    background-attachment: fixed;
     background-blend-mode: multiply; /* this is optional it darkens background image to let text stand out*/
     color: var(--clr-light);
     text-align: center;
@@ -430,7 +440,7 @@ header {
         align-items: center;
         justify-content: center;  
         perspective: 1800px;
-        background-image: url(./images/backgroundImage.png);
+        background-image: url(./images/backgroundImages/backgroundImageIntro.png);
         background-size: cover;
         margin-top: -3rem;
 
@@ -560,18 +570,24 @@ header {
 .about-me { 
     max-width: 1900px;
     margin: 0 auto;
-    background-image: url();
+    background-image: url(./images/backgroundImages/5.png);
+    background-color: rgba(17, 26, 24, .6);
     background-size: cover;
     background-position: bottom;
     background-blend-mode: multiply; /* this is optional it darkens background image to let text stand out*/
     
 }
 
+.section__title.section__title--about {
+    color: var(--clr-light);
+
+}
+
 .about-me__body {
     font-size: larger;
-  /*  background-color: var(--clr-accent-bg);*/
-  
-    backdrop-filter: blur(0.2rem);
+   background-color: var(--clr-accent-bg);
+    color: var(--clr-light);
+    backdrop-filter: blur(0.3rem);
     padding-left: .9rem;
     border-radius: 10px;
 
@@ -587,35 +603,47 @@ header {
 /* my work/ portfolio  */
 
 .my-work {
+    background-image: url(./images/backgroundImages/7.png); /* <---*/
+    background-size:  cover;
+    background-position: bottom;
+    background-attachment: fixed;
     background-color: var(--clr-dark);
+    
     color: var(--clr-light);
     text-align: center;
 }
 
+
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    
 }
 
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    border-radius: 10%;
+    margin-bottom: 1rem;
+    
 }
 
 .portfolio__img {
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
                 opacity 250ms linear;
+    
 }
 
 .portfolio__item:focus {
     position: relative;
     z-index: 2;
+    
 }
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .75;
+    transform:;
+    outline-color: var(--clr-accent-bg);
 
 }
 
