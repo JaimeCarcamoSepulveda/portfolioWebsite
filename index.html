@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9555460ca5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="steez.css">
+    <script src="./script.js" defer></script>
+</head>
+<body> 
+    <header>
+        <div class="logo">
+     <!--    <img src="./images/meInSpaceLogo.svg" alt="">-->
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger">
+                <!-- <img src="./images/icon-hamburger.svg" alt="" srcset=""
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18"><g fill="#242D52" fill-rule="evenodd"><path d="M0 0h25v4H0zM0 7h25v4H0zM0 14h25v4H0z"/></g></svg>
+                    
+                    > -->
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 24.1q-.65 0-1.075-.425-.425-.425-.425-1.075V5.3q0-.65.425-1.075Q23.35 3.8 24 3.8q.65 0 1.075.425.425.425.425 1.075v17.3q0 .65-.425 1.075-.425.425-1.075.425Zm0 18q-3.75 0-7.025-1.425-3.275-1.425-5.7-3.85-2.425-2.425-3.85-5.7Q6 27.85 6 24.1q0-3.3 1.15-6.25t3.2-5.3q.45-.5 1.1-.525.65-.025 1.15.475.4.4.325 1.025-.075.625-.475 1.125-1.65 1.9-2.55 4.325Q9 21.4 9 24.1q0 6.25 4.375 10.625T24 39.1q6.25 0 10.625-4.375T39 24.1q0-2.7-.9-5.15t-2.55-4.35q-.4-.5-.45-1.1-.05-.6.35-1 .5-.5 1.2-.45.7.05 1.15.6 2.05 2.35 3.125 5.3Q42 20.9 42 24.1q0 3.75-1.425 7.025-1.425 3.275-3.85 5.7-2.425 2.425-5.7 3.85Q27.75 42.1 24 42.1Z"/></svg>
+                </div>
+            </span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#myWork" class="nav__link">My work</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <!--Introduction-->
+    <section id="home">
+        <div class="intro">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Jaime Carcamo</strong>
+            </h1>
+           <div id="devLine-container" class="section__subtitle section__subtitle--intro">
+                <div id="devLine"> <em>Front-end</em> dev</div>
+            </div>
+            <img id="introPicture" src="./images/onABoat.jpeg" alt="face shot image" class="intro__img">
+        </div>
+    </section>
+    
+    <!--My services-->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+
+            <div class="service">
+                <h3>Responsive Design</h3>
+                <p>
+                    I create website designs from scratch using HTML3, CSS5 and Javascript. When building a websiteI use semantic tags (HTML3), WCAG standards--for color contrast, classes for styling and Data-atTributes for DOM-manipulation.
+                    I also starting using BEM naming convention as it helps organize my CSS and add aria-label for accessibility and to improve SEO ranking.  
+                    To make designs responsive on a website equally stylistic and functional in all screen sizes I use: media queries, Flex-box, Grid, custom properties and occasionally will use Bootstrap5. 
+                    I prefer to not use templates since it gives me flexibility and freedom to build any design imaginable. And, I like to push the envelope.                      
+                </p>
+            </div> 
+
+            <div class="service">
+                <h3>Javascript</h3>
+                <p>
+                    The majority of the website I have built are in vanilla Javascript and are dynamic website with adaptive content per user need. Most of them include the use of: asynchronous function, heavy DOM Manipulation, API calls, local storage, SVG animation and more.
+                    I implement best practices in my code such as: adequate naming convention for function and/or constructors functions, using prototypical inheritance when possible, choosing built-in JS methods over loops if performance is not deterred, code-spacing syntax, comments for long blocks of code and much more. 
+                    My knowledge thus far is backed by numerous books on code etiquette and best practice that I have read. 
+                </p>
+            </div> 
+
+
+            <div class="service">
+                <h3>Experience</h3>
+                <p>
+                    
+                    The first website I built and design was a few years back for a corporation I was in charge of; I was the Real Estate broker there. I created it using Webflow. 
+                    it was a project I completed alone from start to finish. I was responsible for its design, development, content writing and periodical updates thereafter. 
+                    Since then, I've become more conscientious of content, accessibility, high-ranking keywords for SEO among other things. 
+                     I have built a variety of website which make use of APIs, external Databases. Integrating front-end design and functionality,  
+                    building several project that automate a process and provide constantly updated information.
+                    My more recent project are included below. 
+                </p>
+
+            </div> 
+
+        </div> 
+    <!----/ service> -->
+        <a href="#myWork" class="btn">My work</a>
+    </section>
+
+    <!--About me-->
+    <section class="about-me" id="about">
+        
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about"> Front-end Web Developer and Digital nomad living abroad in Chile.</p>
+        <div class="about-me__body">
+            <p>
+                 I grew up in Long Beach, California and got my degree from California University of Los Angeles.  
+                 I have BSc Degree in Computer Information Systems and a minor in Real Estate. 
+                 I am an English and Spanish native speaker.
+            </p>
+            <p>
+                For the last five years I have been working remotely while living in south America. 
+                I hold an active license as a Real Estate broker and Mortgage Loan officer. 
+            </p>
+
+            <p> 
+                Web Development is my passion. I am fascinated with exploring, learning and creating new things. 
+                When I am not programming I enjoy <strong>hiking</strong> with any one of my four sons, <strong>eating</strong> whatever delicious plates my wife is making or playing guitar, <strong>composing</strong> new music. 
+            </p>
+
+        </div>
+
+        <img src="./images/meInBlackAndWhite.jpeg" alt="full body picture of me desc. here" class="about-me__img">
+    </section>
+    <!--my work -->
+    <section class="my-work" id="myWork">
+        <h2 class="section__title section__title--work">Personal Projects</h2>
+        <p class="section__subtitle section__subtitle--work">My most recent website designs</p>
+    
+        <!--portfolio item # 1: lightsVideoCaption-->
+        <div class="portfolio">
+            <a href="./lightsVideoCaptionPortfolio.html" class="portfolio__item">
+                <img src="./LightsVideoCaption/largeSizeScreenNewsLightsVideoCaption.png" alt="watch your favorite youtube video in full screen without any commercials and browse the news simultaneously without any scrolling or tab-toggling"
+                 class="portfolio__img">
+            </a>
+        </div>
+
+        <!--portfolio item # 2: tripWeatherTime-->
+        <div class="portfolio">
+            <a href="./tripWeatherTimePortfolio.html" class="portfolio__item">
+                <img src="./TripWeatherTime/searchResultFullScreen.png" alt="	A unique weather-query website for travelers: returns a five-day forecast, time difference from current location to queried location, and weather results coded into the background visually emulating a sky-gazing view." 
+                class="portfolio__img">
+            </a>
+        </div>
+
+         <!--portfolio item # 3: gringoAchilenao-->
+         <div class="portfolio">
+            <a href="./gringoAchilenao.html" class="portfolio__item">
+                <img src="./GringoAchilenao/largeSizeScreenFormGringoAchilenao.png" alt="Get personalized conversion of your clothes, height, weight, shoe size, dollar amount plus more into Chilean-units while getting useful advise on visiting Chile" 
+                class="portfolio__img">
+            </a>
+        </div>
+
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+    <!--
+        URL LINKS FOR SOCIAL-LIST IN FOOTER
+LINKED -IN
+	<i class="fa-brands fa-linkedin-in"></i>	
+	<i class="fa-brands fa-linkedin"></i>
+GITHUB
+	<i class="fa-brands fa-github"></i>
+	<i class="fa-brands fa-square-github"></i>
+INSTAGRAM
+	<i class="fa-brands fa-instagram"></i>
+	<i class="fa-brands fa-square-instagram"></i>
+FACEBOOK —start a facebook as a web developer (maybe)
+	<i class="fa-brands fa-facebook"></i>
+	<i class="fa-brands fa-square-facebook"></i>
+TWITTER — (maybe)
+	<i class="fa-brands fa-twitter"></i>
+	<i class="fa-brands fa-square-twitter"></i>
+    -->
+        <a href="mailto:jaimecarcamobroker@gmail.com" class="footer__link">contact@jaimz.dev</a>
+        <ul class="social-list">
+
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/jaimecarcamobroker" class="social-list__link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://github.com/JaimeCarcamoSepulveda" class="social-list__link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.instagram.com/jaimecarcamobroker/" class="social-list__link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://www.facebook.com/jaimecarcamobroker/" class="social-list__link">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </li>
+        </ul>
+    </footer> 
+</body>
+</html>

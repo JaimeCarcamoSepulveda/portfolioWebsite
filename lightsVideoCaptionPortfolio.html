@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9555460ca5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="steez.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <!--navigation menu-->
+    <header>
+        <div class="logo">
+         <img src="" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger">
+                <!-- <img src="./images/icon-hamburger.svg" alt="" srcset=""
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18"><g fill="#242D52" fill-rule="evenodd"><path d="M0 0h25v4H0zM0 7h25v4H0zM0 14h25v4H0z"/></g></svg>
+                    
+                    > -->
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M24 24.1q-.65 0-1.075-.425-.425-.425-.425-1.075V5.3q0-.65.425-1.075Q23.35 3.8 24 3.8q.65 0 1.075.425.425.425.425 1.075v17.3q0 .65-.425 1.075-.425.425-1.075.425Zm0 18q-3.75 0-7.025-1.425-3.275-1.425-5.7-3.85-2.425-2.425-3.85-5.7Q6 27.85 6 24.1q0-3.3 1.15-6.25t3.2-5.3q.45-.5 1.1-.525.65-.025 1.15.475.4.4.325 1.025-.075.625-.475 1.125-1.65 1.9-2.55 4.325Q9 21.4 9 24.1q0 6.25 4.375 10.625T24 39.1q6.25 0 10.625-4.375T39 24.1q0-2.7-.9-5.15t-2.55-4.35q-.4-.5-.45-1.1-.05-.6.35-1 .5-.5 1.2-.45.7.05 1.15.6 2.05 2.35 3.125 5.3Q42 20.9 42 24.1q0 3.75-1.425 7.025-1.425 3.275-3.85 5.7-2.425 2.425-5.7 3.85Q27.75 42.1 24 42.1Z"/></svg>
+                </div>
+            </span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="./index.html#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="./index.html#services" class="nav__link">My services</a></li>
+                <li class="nav__item"><a href="./index.html#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="./index.html#myWork" class="nav__link">My work</a></li>
+            </ul>
+        </nav> 
+    </header>
+     <!--Introduction-->
+ <section class="intro" >
+    <h1 class="section__title section__title--intro">
+        lights <strong>Video Caption</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro"> Watch commercial-free Youtube videos and get news at the same time</p>
+    <img id="project-image" src="./LightsVideoCaption/largeSizeScreenNewsLightsVideoCaption.png" alt="project image" class="intro__img">
+    </section>
+
+<!--portfolio section-->
+    <div class="portfolio-item-individual">
+        <p>
+            Do you prefer to watch your favorite youtube video without any interruptions?
+            Are you at times interested or mildly curious about news and current events?
+        </p>
+        <img src="" alt="" srcset="">
+        <p> 
+            No more having to click ”skip add” during your favorite Youtube video. Avoid that annoying Pepsi zero commercial on TV while getting your news. 
+            Imagine not having to minimize full screen to toggle between tabs so you can browse news article you find interesting.
+        </p>
+        <p>
+            Here you can read the news while simultaneously watching your youtube video. 
+            Designed with productivity in mind, this website is created to avoid interruptions, adds, commercials, and all time it takes to search, browse or sort through news. 
+            Without any scrolling or tab-toggling simply click on the news snippet you find interesting and save it to read later. 
+        
+        </p>
+        <p>
+            While putting together this website my first challenge was creating a function that can adequately modify the given youTube URL so as to avoid commercials.
+             The next challenge was connecting to a News API whereby the fetch URL is automatically made. I also wanted the news results to be fresh at each query. 
+             So I created a function that selects two news topics from a list of fourteen. Chosen at random each query yields different news articles. Each query is made 
+             after appearing in the news snippet at maximum of three times. Finally I wanted to avoid having to toggle, scroll or do anyting that can interrupt the flow of 
+             the video being watched. So I created a News Container that saves each article that is selected.
+
+        </p>
+    </div>
+
+
+<!--footer-->
+    <footer class="footer portfolio-item">
+            <a href="mailto:jaimecarcamobroker@gmail.com" class="footer__link">contact@jaimz.dev</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a href="https://www.linkedin.com/in/jaimecarcamobroker" class="social-list__link">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://github.com/JaimeCarcamoSepulveda" class="social-list__link">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://www.instagram.com/jaimecarcamobroker/" class="social-list__link">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://www.facebook.com/jaimecarcamobroker/" class="social-list__link">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer> 
+    </body>
+    </html>
+</body>
+</html>
