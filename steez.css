@@ -198,7 +198,6 @@ header {
     rotate: 90deg;
     transition: 1600ms ease-in-out;
     border-radius: 100%;
-    
     background-color: var(--clr-accent-btn);
     opacity: .6;
    
@@ -267,42 +266,6 @@ header {
     margin: .3rem;
 }
  
-/*
-
-.nav-open .hamburger {
-    transform: rotate(0.625turn);
-}
-
-.nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
-}
-
-.nav-open .hamburger::after {
-    opacity: 0;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-    background: var(--clr-accent) ;
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-.hamburger::before{  top: 6px;}
-.hamburger::after { bottom: 6px;}
-*/
-
 /*intro section */
 
 .intro {
