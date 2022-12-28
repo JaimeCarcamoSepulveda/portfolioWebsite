@@ -4,27 +4,26 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design 
---clr-light: #fff;
---clr-dark: #1f1c1c;
---clr-accent: rgb(22,224,189);
---clr-accent-bg: rgba(43, 68, 65, 0.4);
---clr-accent-btn-bg: rgb(24, 6, 3);
---clr-accent-btn-svg: rgb(226, 59, 21);
-
-*/
 
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
     
     --fw-reg: 300;
+    --fw-semi-bold: 600;
     --fw-bold: 900;
     
     --clr-light: #fff;
     --clr-dark: #1f1c1c;
     --clr-accent: rgb(148, 172, 191);
     --clr-accent-bg: rgba(43, 68, 65, 0.4);
+    --clr-profile: #0d183b;
+    --clr-percent: #265ddc;
+    --clr-percent-skills: #5b646879;
+    --clr-icons-text: rgb(111, 164, 207);
+    --clr-link: rgb(98, 36, 146);
+
+
     
     --clr-btn-svg: rgb(226, 59, 21);
     
@@ -95,7 +94,7 @@ strong { font-weight: var(--fw-bold) }
 
 h1,
 h2,
-h3 {
+h3, h4, h5 {
     line-height: 1;
     margin: 0;
 }
@@ -686,12 +685,6 @@ header {
 #gringoAchilenao, #lightsVideoCaption {
     background: rgba(76, 82, 82, 0.15);
 }
-
-
-
-
-
-
 
 
 

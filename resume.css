@@ -1,0 +1,336 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    
+    --fw-reg: 300;
+    --fw-semi-bold: 600;
+    --fw-bold: 900;
+    
+    --clr-light: #fff;
+    --clr-dark: #1f1c1c;
+    --clr-profile: #0d183b;
+    --clr-percent: #265ddc;
+    --clr-percent-skills: #5b646879;
+    --clr-accent: rgb(148, 172, 191);
+    --clr-icons-text: rgb(111, 164, 207);
+    --clr-link: rgb(98, 36, 146);
+    --clr-accent-bg: rgba(43, 68, 65, 0.4);
+    
+    --clr-btn-svg: rgb(226, 59, 21);
+    
+    --fs-h1: 2.8rem;
+    --fs-h2: 1.6rem;
+    --fs-h3: 1rem;
+    --fs-body: .8rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25), 
+        0.125em 0.125em 0.25em rgba(0,0,0,.15); 
+}
+
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.resume-body {
+    background-color: var(--clr-accent) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container-resume {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: var(--clr-light);
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /*   box-shadow: 0 35px 55px rgba(0,0,0,0.1)  */
+    box-shadow: var(--bs);
+}
+
+.profile-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+}
+
+.profile-text .imagebox {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-text .imagebox img {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-text h2 {
+    color: var(--clr-light);
+    font-size: var(--fs-h2) ;
+    margin-top: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4em;
+}
+
+.profile-text h2 span {
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-reg);
+}
+
+.contact-info {
+    padding-top: 2rem;
+}
+.title {
+    color: var(--clr-light);
+    text-transform: uppercase;
+    font-weight: var(--fw-semi-bold);
+    letter-spacing: 1px;
+    margin-bottom: 1.25rem;
+}
+
+.contact-info ul {
+    position: relative;
+    padding-left: 5px;
+}
+
+.contact-info ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact-info ul li .icon {
+    display: inline-block;
+    width: 2.5rem;
+    font-size: var(--fs-h3);
+    color: var(--clr-icons-text);
+
+} 
+.contact-info ul li span {
+    color: var(--clr-light);
+    font-weight: var(--fw-reg);
+
+}
+
+.contact-info.education li {
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.contact-info.education h5 {
+    color: var(--clr-icons-text);
+    font-weight: var(--fw-semi-bold);
+}
+
+.contact-info.education h4:nth-child(2) {
+    color: var(--clr-light);
+    font-weight: 500;
+
+}
+
+.contact-info.education h4 {
+    color: var(--clr-light);
+    font-weight: var(--fw-reg);
+
+}
+
+.contact-info.language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    display: block;
+    background: rgba(187, 37, 37, 0.8);
+    margin-top: 5px;
+}
+
+.contact-info.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--clr-percent);
+
+}
+
+
+.container-resume .left-side {
+    position: relative;
+    background: var(--clr-dark) ;
+    padding: 2.5rem;
+}
+
+.container-resume .right-side {
+    position: relative;
+    background: var(--clr-light) ;
+    padding: 2.5rem;
+}
+
+.about-resume {
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+
+.about-resume:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: var(--clr-profile);
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--clr-dark);
+}
+
+h3 {
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    color: var(--clr-dark);
+}
+
+
+
+
+.date-launched h5 {
+    color: rgba(47, 45, 42, 0.939);
+    min-width: 150px;
+}
+
+.hyperlink {
+    text-decoration: none;
+    color: var(--clr-link);
+    font-weight: var(--fw-bold);
+    font-size: 1.2rem;
+}
+
+.about-resume .box {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.about-skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-skills .box h4 {
+    text-transform: uppercase;
+    font-weight: var(--fw-semi-bold);
+    color: rgba(26, 23, 23, 0.657);
+}
+
+.about-skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: var(--clr-percent-skills);
+}
+
+.about-skills .box .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--clr-percent);
+}
+
+.tools ul {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.tools ul li {
+    list-style: none;
+    color: var(--clr-profile) ;
+    font-weight: var(--fw-semi-bold);
+    margin: .6rem 0;
+}
+
+
+#resume {
+    padding: .6rem 1.2rem;
+    text-decoration: none;
+    border: var(--clr-dark) 1px solid;
+    border-radius: 35px;
+    letter-spacing: 2px;
+    color: var(--clr-icons-text);
+    box-shadow: none;
+    margin: 5%;
+    font-size: 1.4rem;
+    align-self: center;
+    font-weight: var(--fw-semi-bold);
+    transition: all 350ms;
+}
+
+#resume:hover {
+    background: rgba(80, 76, 76, 0.2);
+    color: #0d183b;
+    box-shadow: var(--bs);
+}
+
+@media (max-width: 1000px) {
+    .container-resume {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .tools ul {
+        grid-template-columns: repeat(3,1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+    .about-resume .box {
+        flex-direction: column;
+    }
+    .about-resume .box .date-launched {
+        margin-bottom: 5px;
+    }
+
+    .tools ul {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
